@@ -55,21 +55,4 @@ class ProductSaveHelpers:
 
         return Response(f"Succesfully Inserted. Product ID:{product_id}", status=200)
 
-    # def save_merchant_details(self, url: str):
-    #     merchant_scraper = MerchantScraper(url=url)
-    #     merchant_details = merchant_scraper.scrape.merchant()
-    #
-    #     if not merchant_details:
-    #         return Response("Something Wrong", status=500)
-    #
-    #     merchant_name = merchant_details.pop("merchant_name", "")
-    #     merchant_url = merchant_details.pop("merchant_url", "")
-    #
-    #     if not all([merchant_name, merchant_url]):
-    #         return Response("Merchant Not Parsed", status=500)
-    #
-    #     merchant = self.__save_merchant(merchant_name=merchant_name, url=merchant_url)
-    #     merchant_details["merchant_id"] = merchant
-    #     product_id = self.__save_product(**merchant_details)
-    #
-    #     return Response(f"Succesfully Inserted. Product ID:{product_id}", status=200)
+
