@@ -1,0 +1,5 @@
+djangorestframework==3.14.0
+Django==3.2.19
+django-tagging==0.5.0
+requests==2.30.0
+beautifulsoup4==4.12.2
